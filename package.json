@@ -1,0 +1,52 @@
+{
+	"name": "nativescript-tesseract-ios",
+	"version": "1.0.1",
+	"description": "A NativeScript plugin that wraps tesseract for iOS",
+	"main": "tesseract.js",
+	"typescript": {
+		"definitions": [
+			"tesseract.d.ts"
+		]
+	},
+	"nativescript": {
+		"platforms": {
+			"ios": "2.0.0"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/roblav96/nativescript-tesseract-ios.git"
+	},
+	"keywords": [
+		"nativescript",
+		"tesseract",
+		"ecosystem:nativescript",
+		"nativescript-ios"
+	],
+	"author": {
+		"name": "Rob Laverty",
+		"email": "roblav96@gmx.com"
+	},
+	"license": {
+		"type": "MIT",
+		"url": "https://github.com/roblav96/nativescript-tesseract-ios/blob/master/LICENSE"
+	},
+	"bugs": {
+		"url": "https://github.com/roblav96/nativescript-tesseract-ios/issues"
+	},
+	"homepage": "https://github.com/roblav96/nativescript-tesseract-ios",
+	"readmeFilename": "README.md",
+	"scripts": {
+		"build": "tsc",
+		"demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
+		"demo.android": "npm run preparedemo && cd demo && tns run android",
+		"preparedemo": "npm run build && cd demo && tns plugin remove nativescript-tesseract-ios && tns plugin add .. && tns install",
+		"setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
+	},
+	"devDependencies": {
+		"tns-core-modules": "^2.2.0",
+		"tns-platform-declarations": "^2.2.0",
+		"typescript": "^1.8.10"
+	}
+}
+
