@@ -1,11 +1,12 @@
 {
 	"name": "nativescript-tesseract-ios",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "A NativeScript plugin that wraps tesseract for iOS",
 	"main": "tesseract.js",
 	"typescript": {
 		"definitions": [
-			"tesseract.d.ts"
+			"TesseractOCR.d.ts",
+			"SSZipArchive.d.ts"
 		]
 	},
 	"nativescript": {
